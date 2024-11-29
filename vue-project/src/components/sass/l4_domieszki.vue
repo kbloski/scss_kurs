@@ -36,6 +36,8 @@
 // @mixin nazwa2{ 
 //  @include nazwa;
 // }
+// 
+// Domieszki nie można umieszczać w ciele innej domieszki
 
 $margin-1: 30px;
 $margin-2: 25px;
