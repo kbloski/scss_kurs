@@ -1,5 +1,4 @@
 <template>
-    <!-- <div>Funkcje</div> -->
     <div id="p1"></div>
     <div id="p2"></div>
     <div id="p3"></div>
@@ -23,7 +22,7 @@ div {
 
 #p1 {
     // przy wywołaniu nawiasy muszą być sklejone z funkcją
-    
+
     height: divisiton($height-start, 1);
 }
 #p2 {
