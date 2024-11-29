@@ -6,7 +6,8 @@
     <!-- <l5_zagniezdzanie></l5_zagniezdzanie> -->
     <!-- <l6_domieszki-zparametrami></l6_domieszki-zparametrami> -->
     <!-- <l7_funkcje></l7_funkcje> -->
-    <l8_zagniezdzanie_pseudoklas></l8_zagniezdzanie_pseudoklas>
+    <!-- <l8_zagniezdzanie_pseudoklas></l8_zagniezdzanie_pseudoklas> -->
+    <l9_tworzenie_nazw_za_pomoca_ampersand></l9_tworzenie_nazw_za_pomoca_ampersand>
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import l5_zagniezdzanie from './l5_zagniezdzanie.vue';
 import L6_domieszkiZparametrami from './l6_domieszkiZparametrami.vue';
 import l7_funkcje from './l7_funkcje.vue';
 import l8_zagniezdzanie_pseudoklas from './l8_zagniezdzanie_pseudoklas.vue';
+import l9_tworzenie_nazw_za_pomoca_ampersand from './l9_tworzenie_nazw_za_pomoca_ampersand.vue';
 
 export default {
     components: {
@@ -28,7 +30,8 @@ export default {
         l5_zagniezdzanie, 
         L6_domieszkiZparametrami,
         l7_funkcje,
-        l8_zagniezdzanie_pseudoklas
+        l8_zagniezdzanie_pseudoklas,
+        l9_tworzenie_nazw_za_pomoca_ampersand
     }
 }
 </script>
