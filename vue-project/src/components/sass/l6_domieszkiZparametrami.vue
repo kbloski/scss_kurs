@@ -49,8 +49,8 @@
 
         span {
             padding: 5px;
-            @include b-line;
-            @include b-color(black, white)
+            box-shadow: 4px 4px 4px black;
+            @include b-color(black, yellow)
         }
     }
 }
