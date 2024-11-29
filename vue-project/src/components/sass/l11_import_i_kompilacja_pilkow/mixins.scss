@@ -1,0 +1,22 @@
+@mixin text-align {
+    text-align: justify;
+}
+
+.padding-and-align {
+    padding: 0px 20px 0px 20px;
+    @include text-align
+}
+
+%h1-h2 {
+    font-family: "Arial";
+    margin-top: $margin-1;
+    margin-bottom: $margin-1;
+    color: #333;
+}
+
+%h3-h4 {
+    font-family: "Verdana";
+    margin-top: $margin-2;
+    margin-bottom: $margin-2;
+    color: #555;
+}
