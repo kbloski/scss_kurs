@@ -31,7 +31,7 @@
 $margin-1: 30px;
 $margin-2: 25px;
 
-@mixin pading-adnd-aglin
+@mixin padding-and-align
 {
     padding: 0px 20px 0px20px;
     text-align: justify;
@@ -54,7 +54,7 @@ $margin-2: 25px;
 }
 
 h1, h2 {
-    @include pading-adnd-aglin();
+    @include padding-and-align();
     @include h1-h2();
 }
 h1 {
@@ -66,7 +66,7 @@ h2 {
 }
 
 h3, h4 {
-    @include pading-adnd-aglin();
+    @include padding-and-align();
     @include h3-h4();
 }
 
@@ -76,6 +76,11 @@ h3 {
 
 h4 {
     font-size: 20px;
+}
+
+p {
+    color: #555;
+    @include padding-and-align();
 }
 
 </style>
