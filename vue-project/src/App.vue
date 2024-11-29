@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import sassLearn from './components/sassLearn.vue';
+import sassLearn from './components/sass/index.vue';
 
 export default {
     components: {
