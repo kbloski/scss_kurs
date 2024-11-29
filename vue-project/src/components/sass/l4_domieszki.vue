@@ -27,6 +27,15 @@
 </template>
 
 <style lang="scss" scoped>
+// STRUKTURA DOMIESZKI 
+// @mixin nazwa {
+//     ...
+// }
+// 
+// Zagnieżdzanie domieszki
+// @mixin nazwa2{ 
+//  @include nazwa;
+// }
 
 $margin-1: 30px;
 $margin-2: 25px;
@@ -38,8 +47,7 @@ $margin-2: 25px;
 @mixin padding-and-align
 {
     padding: 0px 20px 0px 20px;
-    @include text-align()
-    // text-align: justify;
+    @include text-align
 }
 
 @mixin h1-h2
@@ -59,8 +67,8 @@ $margin-2: 25px;
 }
 
 h1, h2 {
-    @include padding-and-align();
-    @include h1-h2();
+    @include padding-and-align;
+    @include h1-h2;
 }
 h1 {
     font-size: 40px;
@@ -71,8 +79,8 @@ h2 {
 }
 
 h3, h4 {
-    @include padding-and-align();
-    @include h3-h4();
+    @include padding-and-align;
+    @include h3-h4;
 }
 
 h3 {
@@ -85,7 +93,7 @@ h4 {
 
 p {
     color: #555;
-    @include padding-and-align();
+    @include padding-and-align;
 }
 
 </style>
