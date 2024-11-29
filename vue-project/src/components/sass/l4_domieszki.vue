@@ -31,10 +31,15 @@
 $margin-1: 30px;
 $margin-2: 25px;
 
+@mixin text-align {
+    text-align: justify;
+}
+
 @mixin padding-and-align
 {
-    padding: 0px 20px 0px20px;
-    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    @include text-align()
+    // text-align: justify;
 }
 
 @mixin h1-h2
