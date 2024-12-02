@@ -8,7 +8,7 @@
 // $a: null;
 // $b: true;
 $a: 30;
-$b: 310;
+$b: 10;
 
 @function getColor($num1, $num2){
     // @if($a or $b){
@@ -31,12 +31,21 @@ div {
     width: 300px;
     background-color: getColor($a, $b );
     margin: 0 auto;
+
 }
 
 .div1 {
     margin-top: 1rem;
     // background-color: if(warunek, wartość jeśli prawda, wartość jeśli fałsz);
+    background-color: yellow;
     background-color: if($a > $b, green, red);
+
+    @if($a > $b){
+        border: 3px solid black;
+    } 
+    @else {
+        border: 3px dotted black;
+    }
 }
 
 </style>
