@@ -10,13 +10,15 @@
     <!-- <l9_tworzenie_nazw_za_pomoca_ampersand></l9_tworzenie_nazw_za_pomoca_ampersand> -->
     <!-- <l10_pseudoklasa_extend_i_placeholder></l10_pseudoklasa_extend_i_placeholder> -->
     <!-- <l11_import_i_kompilacja_plikow></l11_import_i_kompilacja_plikow> -->
-    <l12_instrukcja_warunkowa_if></l12_instrukcja_warunkowa_if>
+    <!-- <l12_instrukcja_warunkowa_if></l12_instrukcja_warunkowa_if> -->
+    <l13_petla_for></l13_petla_for>
 </template>
 
 <script>
 import l10_pseudoklasa_extend_i_placeholder from './l10_pseudoklasa_extend_i_placeholder.vue';
 import l11_import_i_kompilacja_plikow from './l11_import_i_kompilacja_pilkow/l11_import_i_kompilacja_plikow.vue';
 import l12_instrukcja_warunkowa_if from './l12_instrukcja_warunkowa_if.vue';
+import l13_petla_for from './l13_petla_for.vue';
 
 import l1Zmienne from './l1_zmienne.vue';
 import l2_zmienne_part2 from './l2_zmienne_part2.vue';
@@ -42,7 +44,8 @@ export default {
         l9_tworzenie_nazw_za_pomoca_ampersand,
         l10_pseudoklasa_extend_i_placeholder,
         l11_import_i_kompilacja_plikow,
-        l12_instrukcja_warunkowa_if
+        l12_instrukcja_warunkowa_if,
+        l13_petla_for
     }
 }
 </script>
