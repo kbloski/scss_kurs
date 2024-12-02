@@ -9,6 +9,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:color';
+
 div {
     aspect-ratio: 1/1;
     border: 1px solid black;
@@ -20,31 +22,36 @@ div {
     font-size: 20px;
 }
 
-@function rgbFunction(){
-    @return rgb(255,11,25)
-};
+// Funkcja rgbFunction poprawiona
+@function rgbFunction() {
+    @return rgb(255, 11, 25);
+}
 
-@function colorRgb(){
-    @return rgb(red(#ca3827), green(#00ca33), blue(#ca38aa));
-};
+@function colorRgb() {
+    @return rgb(
+        color.channel(#ca3827, 'red'),
+        color.channel(#00ca33, 'green'),
+        color.channel(#ca38aa, 'blue')
+    );
+}
 
+// Klasy z poprawionymi wartościami kolorów
 .rgb {
     background-color: rgbFunction();
 }
 
 .rgba {
-    background-color: rgb(255,11,25, .2);
+    background-color: rgba(255, 11, 25, 0.2); // Użycie rgba zamiast rgb dla przezroczystości
 }
 
 .red_green_blue {
-    // funkcje red() green() blue() pobierają zmienne z kolorów odpowiadające
-    background-color: colorRgb()
+    background-color: colorRgb();
 }
 
 .mix {
-    // mieszanie kolorów
-    background-color: mix(red, blue);
+    background-color: color.mix(red, blue); // Użycie funkcji z modułu 'color'
 }
+
 
 
 </style>

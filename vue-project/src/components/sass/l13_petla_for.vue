@@ -9,18 +9,20 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:list';
+
 $colors: red, green, blue, yellow, #849920;
 
 // @for $i from 1 through 6{
 //     .d#{$i} {
-//         background-color: if( length($colors) >= $i, nth($colors, $i ), purple);
+//         background-color: if( length($colors) >= $i, list.nth($colors, $i ), purple);
 //     }
 // }
 
-@for $i from 1 through length($colors){
+@for $i from 1 through list.length($colors){
     .d#{$i} {
         content: '#{$i}';
-        background-color: nth($colors, $i );
+        background-color: list.nth($colors, $i );
     }
 }
 
@@ -30,7 +32,7 @@ div {
     margin: 0 auto;
     width: 100px;
     margin-top: 1rem;
-    background-color: nth($colors, 1);
+    background-color: list.nth($colors, 1);
 }
 
 </style>

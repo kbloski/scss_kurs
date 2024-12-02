@@ -20,6 +20,9 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:color';
+@use 'sass:math';
+
 $size: 100px;
 $spacing: 2px;
 
@@ -38,46 +41,43 @@ $n: 0.9;
     height: $size;
     display: inline-block;
     border: 1px solid #888;
-    margin: $spacing/2;
+    margin: math.div($spacing, 2); // Poprawa wyrażenia dzielenia
 
-    // zmiany nazw selektorów z &-dalsza-czesc-nazwy-klasy
+    // Zmiany nazw selektorów z &-dalsza-czesc-nazwy-klasy
     &-1 {
         &-1 {
-            background: darken( $first-color, 10 * $n);
-        };
+            background: color.adjust($first-color, $lightness: 10 * $n * 1%);
+        }
         &-2 {
-            background: darken( $first-color, 20 * $n);
-        };
+            background: color.adjust($first-color, $lightness: 20 * $n * 1%);
+        }
         &-3 {
-            background: darken( $first-color, 30 * $n);
+            background: color.adjust($first-color, $lightness: 30 * $n * 1%);
         }
     }
 
     &-2 {
         &-1 {
-            background: darken($second-color, 10 *$n )
-        };
+            background: color.adjust($second-color, $lightness: 10 * $n * 1%);
+        }
         &-2 {
-            background: darken($second-color, 20 *$n )
-        };
+            background: color.adjust($second-color, $lightness: 20 * $n * 1%);
+        }
         &-3 {
-            background: darken($second-color, 30 *$n )
+            background: color.adjust($second-color, $lightness: 30 * $n * 1%);
         }
     }
 
     &-3 {
         &-1 {
-            background: darken($third-color, 10 *$n )
-        };
+            background: color.adjust($third-color, $lightness: 10 * $n * 1%);
+        }
         &-2 {
-            background: darken($third-color, 20 *$n )
-        };
+            background: color.adjust($third-color, $lightness: 20 * $n * 1%);
+        }
         &-3 {
-            background: darken($third-color, 30 *$n )
+            background: color.adjust($third-color, $lightness: 30 * $n * 1%);
         }
     }
-
 }
-
-
 </style>

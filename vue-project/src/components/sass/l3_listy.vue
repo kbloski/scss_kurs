@@ -8,15 +8,16 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:list';
 // indexy listy zaczynają się od 1 nie, jak w innych językach od 0
 
 
 $list: 14, 21 3 4 5, 10, (222, 22, 2221, 22222); // lista wartości
-$length: length($list); // długość listy
-$first: nth($list, 1); // wybór elementu listy
-$second: nth($list, 2);
-$last: nth($list, 3);
-$list2-second-el: nth(nth($list, 2), 2); // drugi el zagnieżdzonej listy
+$length: list.length($list); // długość listy
+$first: list.nth($list, 1); // wybór elementu listy
+$second: list.nth($list, 2);
+$last: list.nth($list, 3);
+$list2-second-el: list.nth(list.nth($list, 2), 2); // drugi el zagnieżdzonej listy
 
 $elementTag: div;
 

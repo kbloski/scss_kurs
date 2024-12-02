@@ -1,3 +1,5 @@
+@use './variables.scss' as vars;
+
 @mixin text-align {
     text-align: justify;
 }
@@ -9,14 +11,14 @@
 
 %h1-h2 {
     font-family: "Arial";
-    margin-top: $margin-1;
-    margin-bottom: $margin-1;
+    margin-top: vars.$margin-1;
+    margin-bottom: vars.$margin-1;
     color: #333;
 }
 
 %h3-h4 {
     font-family: "Verdana";
-    margin-top: $margin-2;
-    margin-bottom: $margin-2;
+    margin-top: vars.$margin-2;
+    margin-bottom: vars.$margin-2;
     color: #555;
 }

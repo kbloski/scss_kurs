@@ -9,6 +9,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:list';
+
 $colors: gray, green, blue, yellow, #849920;
 
 // ########## Petla 1
@@ -59,7 +61,7 @@ div {
     margin: 0 auto;
     width: 100px;
     margin-top: 1rem;
-    background-color: nth($colors, 1);
+    background-color: list.nth($colors, 1);
 }
 
 </style>

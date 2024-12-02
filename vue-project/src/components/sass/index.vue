@@ -8,7 +8,7 @@
     <!-- <l4_domieszki></l4_domieszki> -->
     <!-- <l5_zagniezdzanie></l5_zagniezdzanie> -->
     <!-- <l6_domieszki-zparametrami></l6_domieszki-zparametrami> -->
-    <!-- <l7_funkcje></l7_funkcje> -->
+    <l7_funkcje></l7_funkcje>
     <!-- <l8_zagniezdzanie_pseudoklas></l8_zagniezdzanie_pseudoklas> -->
     <!-- <l9_tworzenie_nazw_za_pomoca_ampersand></l9_tworzenie_nazw_za_pomoca_ampersand> -->
     <!-- <l10_pseudoklasa_extend_i_placeholder></l10_pseudoklasa_extend_i_placeholder> -->
@@ -18,7 +18,7 @@
     <!-- <l14_petla_each></l14_petla_each> -->
     <!-- <l15_petla_while></l15_petla_while> -->
     <!-- <l16_funkcje_wbudowane></l16_funkcje_wbudowane> -->
-    <l17_funckje_matematyczne></l17_funckje_matematyczne>
+    <!-- <l17_funckje_matematyczne></l17_funckje_matematyczne> -->
 </template>
 
 <script>

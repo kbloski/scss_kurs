@@ -25,18 +25,15 @@
         pariatur doloremque laboriosam optio vitae, quas necessitatibus unde autem!
     </p>
 </template>
-
 <style lang="scss" scoped>
-// Importowanie plików scss
-@import './variables.scss';
-@import './mixins.scss';
-
-
+// Importowanie plików SCSS za pomocą @use
+@use './mixins.scss';
 
 h1, h2 {
     @extend .padding-and-align;
-    @extend %h1-h2;
+    @extend %h1-h2; 
 }
+
 h1 {
     font-size: 40px;
 }
@@ -47,7 +44,7 @@ h2 {
 
 h3, h4 {
     @extend .padding-and-align;
-    @extend %h3-h4;
+    @extend %h3-h4; 
 }
 
 h3 {
@@ -62,5 +59,4 @@ p {
     color: #555;
     @extend .padding-and-align;
 }
-
 </style>

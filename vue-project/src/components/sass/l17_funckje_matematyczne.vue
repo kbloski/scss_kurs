@@ -11,6 +11,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use 'sass:math';
+
 div {
     aspect-ratio: 1/1;
     border: 1px solid black;
@@ -23,32 +25,32 @@ div {
 }
 
 
-$value: -1 * random();
+$value: -1 * math.random();
 .random::after {
     content: '#{$value}';
 }
 
 .percentage::after {
-    content: '#{percentage($value)}';
+    content: '#{math.percentage($value)}';
 }
 
 .round::after {
-    content: '#{round($value)}';
+    content: '#{math.round($value)}';
 }
 
 .cell::after {
-    content: '#{ceil($value)}';
+    content: '#{math.ceil($value)}';
 }
 
 .abs::after {
-    content: '#{abs($value)}';
+    content: '#{math.abs($value)}';
 }
 .min::after {
-    content: '#{min($value, -2, -3, -3.3)}';
+    content: '#{math.min($value, -2, -3, -3.3)}';
 }
 
 .max::after {
-    content: '#{max($value, 1, 2,3,4,5)}';
+    content: '#{math.max($value, 1, 2,3,4,5)}';
 }
 
 

@@ -9,7 +9,7 @@
 $height-start: 400px;
 
 @function divisiton($a, $b){
-    @return $a / $b;
+    @return calc($a / $b);
 }
 
 div {
