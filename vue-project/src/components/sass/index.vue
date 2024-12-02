@@ -17,7 +17,8 @@
     <!-- <l13_petla_for></l13_petla_for> -->
     <!-- <l14_petla_each></l14_petla_each> -->
     <!-- <l15_petla_while></l15_petla_while> -->
-    <l16_funkcje_wbudowane></l16_funkcje_wbudowane>
+    <!-- <l16_funkcje_wbudowane></l16_funkcje_wbudowane> -->
+    <l17_funckje_matematyczne></l17_funckje_matematyczne>
 </template>
 
 <script>
@@ -27,7 +28,8 @@ import l12_instrukcja_warunkowa_if from './l12_instrukcja_warunkowa_if.vue';
 import l13_petla_for from './l13_petla_for.vue';
 import l14_petla_each from './l14_petla_each.vue';
 import l15_petla_while from './l15_petla_while.vue';
-import l16_funkcje_wbudowane from '@/components/sass/l16_funkcje_wbudowane.vue';
+import l16_funkcje_wbudowane from '@/components/sass/l16_funkcje_kolorow.vue';
+import l17_funckje_matematyczne from './l17_funckje_matematyczne.vue';
 
 import l1Zmienne from './l1_zmienne.vue';
 import l2_zmienne_part2 from './l2_zmienne_part2.vue';
@@ -57,7 +59,8 @@ export default {
         l13_petla_for,
         l14_petla_each,
         l15_petla_while,
-        l16_funkcje_wbudowane
+        l16_funkcje_wbudowane,
+        l17_funckje_matematyczne
     }
 }
 </script>
