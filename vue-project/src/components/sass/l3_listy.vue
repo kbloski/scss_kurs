@@ -8,6 +8,9 @@
 </template>
 
 <style lang="scss" scoped>
+// indexy listy zaczynają się od 1 nie, jak w innych językach od 0
+
+
 $list: 14, 21 3 4 5, 10, (222, 22, 2221, 22222); // lista wartości
 $length: length($list); // długość listy
 $first: nth($list, 1); // wybór elementu listy
