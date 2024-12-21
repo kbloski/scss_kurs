@@ -14,7 +14,7 @@
 $colors: gray, green, blue, yellow, #849920;
 
 
-$n: 1;
+$n: 1; 
 
 @while $n <= list.length($colors){
     .d#{$n}{
