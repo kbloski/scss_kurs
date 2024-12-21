@@ -24,7 +24,7 @@ $n: 1;
     $n: $n + 1;
 }
 
-div {
+div { 
     aspect-ratio: 1/1;
     border: 1px solid black;
     margin: 0 auto;
