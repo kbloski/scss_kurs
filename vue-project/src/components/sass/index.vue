@@ -19,6 +19,7 @@
     <!-- <l15_petla_while></l15_petla_while> -->
     <!-- <l16_funkcje_wbudowane></l16_funkcje_wbudowane> -->
     <!-- <l17_funckje_matematyczne></l17_funckje_matematyczne> -->
+    
 </template>
 
 <script>
